@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Product order form</h1>
+    <form>
+         <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="please say your name "required>
+    <br></br>
+    <label for="surename">Surname:</label>
+    <input type="text" id="surename" placeholder="please say your surname" required>
+    <br></br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="please say your email" required>
+    <br></br>
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" placeholder="please say your phone" required>
+    <br></br>
+    <label for="number">Product quantity:</label>
+    <input type="number" id="number" placeholder="choose number"min="1" 
+    max="10" required>
+    <br></br>
+    <label for="text">Delivery address:</label>
+    <input id="text" placeholder="please write your delivery address" minlength="10" maxlength="25" required></input>
+    <br></br>
+       <h2>Choose your options delivery</h2>
+    <label for="text">Choice:</label>
+    <input type="radio" id="post_office" name="text" value="post office" required>
+    <label for="post_office">post office</label>
+    <input type="radio" id="courier" name="text" value="courier" required>
+    <label for="courier">courier</label>
+    <input type="radio" id="pickup" name="text" value="pickup"required>
+<label for="text">pickup</label>
+<h2>additional information</h2>
+<label for="text">gift wrapping</label>
+<input type="checkbox" id="gift" name="gift" value="gift">
+<br></br>
+    <label for="text">additional warranty</label>
+    <input type="checkbox" id="warranty" name="warranty" value="warranty">
+<br></br>
+     <label for="text">SMS-message</label>
+     <input type="checkbox" id="sms" name="sms"value="sms">
+<br></br>
+    <label for="text">phone call before delivery</label>
+    <input type="checkbox" id="phone_call" name="phone_call" value="phone_call">
+        <h2>selection of payment method</h2>
+           <label for="payment">Payment Method:</label>
+        <select name="payment" id="payment" required>
+            <option value="payment by card">payment by card</option>
+            <option value="cash">cash on delivery</option>
+            <option value="bank transfer">bank transfer</option>
+            </select>
+            <br></br>
+              <label for="comment">Comment on the order:</label>
+              <textarea id="comment" name="comment" placeholder="please write your comment" minlength="10" maxlength="200" rows="1" cols="20"></textarea>
+              <br></br>
+                <label for="submit">Click here to submit</label>
+                <button type="submit">send</button>
+        
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+</body>
+</html>
