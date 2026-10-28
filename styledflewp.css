@@ -1,0 +1,77 @@
+.hd{
+    text-align:center;
+    background-color:rgb(241, 234, 227);
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.menu{
+    display:flex;
+    gap: 25px;
+    list-style: none;
+}
+.menu li a{
+   text-decoration: none;
+}
+.news-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.layout{
+    display: grid;
+      grid-template-columns: 250px 1fr; 
+    gap: 20px; 
+    padding: 20px;
+}
+.main-news{
+     grid-column: span 2;
+}
+.news { 
+    display: grid; 
+    grid-template-columns: 
+        repeat(2, 1fr); 
+    gap: 20px; 
+}
+footer{
+    text-align: center;
+     background-color: rgb(241, 234, 227);
+    padding: 15px;
+}
+.buttons { 
+    display: flex; 
+    justify-content: flex-start; 
+    gap: 20px; 
+}
+.box{
+    display: flex;
+    gap: 20px;
+    flex-direction: row; 
+}
+/*flex-direction: row; розставляє елемнти в рядок, а flex-direction: column;  ставить їх у стовпичк*/
+.flex-container{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 20px;
+ border: 1px solid black;
+}
+.item { 
+width: 200px; 
+}
+.grid-example { 
+    display: grid; 
+    grid-template-columns: 
+        repeat(3, 1fr); 
+    gap: 20px; 
+    background-color: rgb(247, 243, 239);
+}
+.big { 
+grid-column: span 2;
+}
+.adaptive-grid { 
+display: grid; 
+grid-template-columns: 
+repeat(auto-fit, minmax(200px, 1fr)); 
+gap: 20px; 
+background-color: rgb(212, 241, 241);
+} 
