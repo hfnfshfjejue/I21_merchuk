@@ -1,0 +1,62 @@
+$main-color: rosybrown;
+$bgrdcard: black;
+$gapx: 20px;
+$rdborder: 5px;
+$cardtit:rgb(60, 60, 120);
+@mixin card{
+    border: 2px solid;
+    border-color: darkslategrey;
+}
+@mixin divone($specialcard){
+border-radius: $specialcard;
+}
+body{
+    background-color:antiquewhite;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 20px;
+}
+.main-title {
+  color: $main-color;
+  text-align: center;
+}
+.jtext{
+    text-align: center;
+    color: $main-color;
+}
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:$gapx;
+    @media (max-width: 600px) {
+        grid-template-columns: repeat(1,1fr)
+    }
+}
+.card{
+    @include card;
+    border-radius: $rdborder;
+transition:0.3s;
+      &:hover{
+        transform: scale(1.1);
+      }
+      display: flex;
+     flex-direction: column;
+      padding: 10px;
+}
+.card-title{
+    color:$cardtit;
+}
+.card-duration{
+      color:rgb(57, 34, 38);
+}
+.card-button{
+    display: inline-block;
+    background-color: rgb(193, 187, 180);
+    margin-top:auto ;
+    align-self: flex-end;
+}
+.card-special{
+    @include divone(15px);
+}
+    
