@@ -1,0 +1,66 @@
+body {
+  background-color: antiquewhite;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+  margin: 20px;
+}
+.main-title {
+  color: rosybrown;
+  text-align: center;
+}
+
+.jtext {
+  text-align: center;
+  color: rosybrown;
+}
+.courses {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 600px) {
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  border: 2px solid;
+  border-color: rgb(60, 111, 111);
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.card-title {
+  color:rosybrown;
+}
+
+.card-duration {
+  color:rgb(60, 111, 111);
+}
+
+.card-button {
+  display: inline-block;
+  background-color: rgb(193, 187, 180);
+  margin-top: auto;
+  align-self: flex-end;
+}
+
+.card-special {
+  border-radius: 15px;
+}
+.card-description{
+    text-align: center;
+    color:rosybrown;
+}
+
+
