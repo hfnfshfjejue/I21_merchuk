@@ -1,0 +1,54 @@
+.courses{
+    display:grid; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.card{
+    border: 2px solid #ccc;
+    margin: 10px;
+    padding: 10px;
+}
+.navdp{
+    display: flex;
+    justify-content:center;
+    gap: 20px;
+    list-style: none;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.main-title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.jtext{
+    text-align: center;
+}
+.course-image{
+    max-width: 250px;
+    width: 100%;
+    height: auto;
+    display:block;
+    margin:auto;
+}
+@media (max-width: 900px) {
+    .courses {
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+          }
+          .navdp{
+            flex-direction:column;
+        }
+        .main-title{
+            font-size: 2rem;
+        }
+}
