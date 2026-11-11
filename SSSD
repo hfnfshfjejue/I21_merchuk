@@ -1,0 +1,104 @@
+!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про мене</title>
+</head>
+<body>
+
+    <!-- 1.1 Головний заголовок по центру -->
+    <h1 style="text-align: center;">Персональна сторінка [Ім'я Прізвище]</h1>
+
+    <hr>
+
+    <!-- 1.1 Підзаголовок 1 + 1.2 абзаци -->
+    <h2 style="text-align: center;">Про мене</h2>
+    <p>
+        Привіт! Мене звати [Ім'я], я студентка [назва коледжу], навчаюся за спеціальністю
+        «Інженерія програмного забезпечення».
+    </p>
+    <p>
+        Я цікавлюся веброзробкою: вивчаю HTML, CSS, Sass і Git, а незабаром почну JavaScript.
+        Моя мета — створювати сайти на замовлення та працювати frontend-розробницею.
+    </p>
+
+    <!-- 1.2 Відформатований блок: підкреслений, жирний, не чорний, нестандартний шрифт -->
+    <p style="color: darkblue; font-family: 'Monotype Corsiva', cursive; font-size: 22px;">
+        <u><b>
+            Мій девіз: «Кожен рядок коду — це крок уперед».
+            Я вірю, що наполегливість важливіша за швидкість.
+        </b></u>
+    </p>
+
+    <hr>
+
+    <!-- 1.1 Підзаголовок 2 + 1.3 маркований список з маркером-колом -->
+    <h2 style="text-align: center;">Мої улюблені предмети</h2>
+    <p>
+        Найбільше мені подобаються предмети, пов'язані з програмуванням і дизайном.
+    </p>
+    <ul type="circle">
+        <li>Веброзробка</li>
+        <li>Основи програмування</li>
+        <li>Англійська мова</li>
+        <li>Дизайн інтерфейсів</li>
+    </ul>
+
+    <hr>
+
+    <!-- 1.1 Підзаголовок 3 + 1.4 зображення 300px з посиланням на джерело -->
+    <h2 style="text-align: center;">Мої фото</h2>
+    <p>
+        Робоче місце, де я вчуся програмувати.
+    </p>
+    <p style="text-align: center;">
+        <a href="[посилання на джерело фото]" target="_blank">
+            <img src="photo.jpg" alt="Моє робоче місце" width="300">
+        </a>
+        <br>
+        Джерело зображення:
+        <a href="[посилання на джерело фото]" target="_blank">[назва сайту]</a>
+    </p>
+
+    <hr>
+
+    <!-- 1.5 Матеріали з інших сайтів через iframe -->
+    <h2 style="text-align: center;">Корисні матеріали</h2>
+    <p>
+        Відео, яке допомагає мені вивчати веброзробку:
+    </p>
+    <p style="text-align: center;">
+        <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/[ID_ВІДЕО]"
+            title="YouTube video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </p>
+
+    <p>
+        Місто, де я навчаюся:
+    </p>
+    <p style="text-align: center;">
+        <iframe width="560" height="315"
+            src="https://www.google.com/maps?q=[Місто]&output=embed"
+            title="Google Maps"
+            style="border: 0;"
+            loading="lazy">
+        </iframe>
+    </p>
+
+    <hr>
+
+    <!-- 1.1 Підзаголовок 4 -->
+    <h2 style="text-align: center;">Контактні дані</h2>
+    <p>
+        Email: <a href="mailto:[твоя пошта]">[твоя пошта]</a>
+    </p>
+    <p>
+        GitHub: <a href="https://github.com/[логін]" target="_blank">github.com/[логін]</a>
+    </p>
+
+</body>
+</html>
